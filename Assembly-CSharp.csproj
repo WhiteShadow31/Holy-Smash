@@ -166,10 +166,12 @@
     <None Include="Assets\Fonts\all_always\More Info.txt" />
     <None Include="Assets\LeanTween\ReadMe.txt" />
     <None Include="Assets\XRI_Examples\UI_2D\Shaders\SilhouetteURP.shader" />
+    <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
     <None Include="Assets\LeanTween\License.txt" />
     <None Include="Assets\XRI_Examples\HoverHighlight\Shaders\TransparentPulse.shader" />
     <None Include="Assets\Audio\Kenney Audio\kenney_sci-fi-sounds\License.txt" />
     <None Include="Assets\Fonts\socake\More Info.txt" />
+    <None Include="Assets\Fantasy Skybox FREE\ReleaseNotes.txt" />
     <None Include="Assets\Audio\Kenney Audio\kenney_interface-sounds\License.txt" />
     <None Include="Assets\XRI_Examples\UI_2D\Shaders\Silhouette.cginc" />
     <None Include="Assets\Fonts\ananda_2\Terms of Use End User Lisence Agreement.txt" />

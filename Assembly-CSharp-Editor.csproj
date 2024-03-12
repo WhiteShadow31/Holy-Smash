@@ -53,8 +53,11 @@
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\XRI_Examples\Global\Scripts\Analytics\Editor\XrcSceneAnalyticsEditor.cs" />
-    <Compile Include="Assets\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\Analytics\Editor\XrcSceneAnalyticsEditor.cs" />
+    <Compile Include="Assets\Autre\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -908,10 +911,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{DB59D21F-0108-5659-721A-1905CF4ACA1D}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{E7F7EB2E-B951-8724-D107-EB9DECFC1373}</Project>
       <Name>Assembly-CSharp</Name>

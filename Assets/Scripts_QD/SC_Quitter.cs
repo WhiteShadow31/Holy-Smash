@@ -7,6 +7,6 @@ public class SC_Quitter : MonoBehaviour {
     public void QuitterJeu() {
 
         Application.Quit();
-        Debug.Log("Quit");
+        //Debug.Log("Quit");
     }
 }

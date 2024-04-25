@@ -83,6 +83,7 @@
     <Compile Include="Assets\Autre\XRI_Examples\HoverHighlight\Scripts\InteractableVisualsController.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\ActivateInteractables\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\PathBezier2d.cs" />
+    <Compile Include="Assets\Scripts_QD\Sc_HitEnnemi.cs" />
     <Compile Include="Assets\Imports\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\Analytics\Events\InteractionEvent.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\TestingUnitTests.cs" />

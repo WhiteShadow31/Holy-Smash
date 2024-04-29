@@ -2629,7 +2629,7 @@ PrefabInstance:
     - target: {fileID: 6884434244319415032, guid: 2eb1a4be84f28384e8b583226f7c9577,
         type: 3}
       propertyPath: m_Drag
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6884434244319415032, guid: 2eb1a4be84f28384e8b583226f7c9577,
         type: 3}
@@ -3530,6 +3530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mob: {fileID: -653318902685225308, guid: 2eb1a4be84f28384e8b583226f7c9577, type: 3}
+  impultionForce: 20
 --- !u!1001 &2102632354
 PrefabInstance:
   m_ObjectHideFlags: 0

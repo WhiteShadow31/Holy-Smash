@@ -8,6 +8,7 @@ TagManager:
   - Flame
   - Water
   - Destroyer
+  - Porte G
   layers:
   - Default
   - TransparentFX

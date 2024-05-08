@@ -2,22 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sc_HitEnnemi : MonoBehaviour {
+public class Sc_HitEnnemi : MonoBehaviour
+{
 
-    public SC_Mob mob;
+    public GameObject mob;
     public float impultionForce = 20f;
+    //public Vector3 impulseVector = new Vector3(10f, 10f, 0f);
 
-    void Start() {
+    void Start()
+    {
 
     }
 
-    void Update() {
+    void Update()
+    {
 
-        Debug.Log(mob.mobDir.y);
+        //Debug.Log(mob.mobDir.y);
     }
 
-    public void OnCollisionEnter() {
+    public void OnCollisionEnter(Collision collider)
+    {
 
-        //collider.Rigidbody.AddForce(Vector3.forward * impultionForce, FoceMode.Impulse);
+        collider.rigidbody.AddForce(Vector3.forward * impultionForce, ForceMode.Impulse);
+        //GetComponent<Rigidbody>().AddForce(impulseVector, ForceMode.Impulse);
     }
 }

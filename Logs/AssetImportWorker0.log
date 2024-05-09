@@ -15,7 +15,7 @@ D:/Brassart/GD3/PPFE/Holy-Smash
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51366
+59470
 Successfully changed project path to: D:/Brassart/GD3/PPFE/Holy-Smash
 D:/Brassart/GD3/PPFE/Holy-Smash
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ D:/Brassart/GD3/PPFE/Holy-Smash
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22112] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 611616307 [EditorId] 611616307 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RPMCDTM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23328] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 2007498770 [EditorId] 2007498770 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RPMCDTM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22112] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 611616307 [EditorId] 611616307 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RPMCDTM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23328] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 2007498770 [EditorId] 2007498770 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RPMCDTM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 1718.48 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.53 ms.
+Refreshing native plugins compatible for Editor in 23.33 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.66 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path D:/Brassart/GD2/Unity/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Brassart/GD3/PPFE/Holy-Smash/Assets
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'D:/Brassart/GD2/Unity/Editor/2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Brassart/GD2/Unity/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Brassart/GD2/Unity/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Brassart/GD2/Unity/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Brassart/GD2/Unity/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.212271 seconds.
-- Loaded All Assemblies, in  5.740 seconds
+Registered in 0.005957 seconds.
+- Loaded All Assemblies, in  0.346 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.208 seconds
-Domain Reload Profiling: 5947ms
-	BeginReloadAssembly (4267ms)
+- Finished resetting the current domain, in  0.227 seconds
+Domain Reload Profiling: 572ms
+	BeginReloadAssembly (112ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (349ms)
+	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (255ms)
-	LoadAllAssembliesAndSetupDomain (857ms)
-		LoadAssemblies (4267ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (112ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (854ms)
-			TypeCache.Refresh (853ms)
-				TypeCache.ScanAssembly (642ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (119ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (208ms)
+	FinalizeReload (227ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (160ms)
+		SetupLoadedEditorAssemblies (175ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (104ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadAttributes (119ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 5947ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  6.974 seconds
-Refreshing native plugins compatible for Editor in 11.65 ms, found 12 plugins.
+- Loaded All Assemblies, in  0.705 seconds
+Refreshing native plugins compatible for Editor in 12.85 ms, found 12 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -150,47 +150,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.720 seconds
-Domain Reload Profiling: 7693ms
-	BeginReloadAssembly (159ms)
+- Finished resetting the current domain, in  0.716 seconds
+Domain Reload Profiling: 1420ms
+	BeginReloadAssembly (154ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (34ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (35ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (6733ms)
-		LoadAssemblies (6421ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (465ms)
+		LoadAssemblies (341ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (413ms)
-			TypeCache.Refresh (373ms)
-				TypeCache.ScanAssembly (319ms)
-			ScanForSourceGeneratedMonoScriptInfo (26ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (720ms)
+		AnalyzeDomain (222ms)
+			TypeCache.Refresh (184ms)
+				TypeCache.ScanAssembly (163ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (716ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (552ms)
+		SetupLoadedEditorAssemblies (548ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
+			BeforeProcessingInitializeOnLoad (73ms)
 			ProcessInitializeOnLoadAttributes (369ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 14.05 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 6209 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 105 unused Assets / (366.9 KB). Loaded Objects now: 6680.
-Memory consumption went from 229.9 MB to 229.5 MB.
-Total: 4.096500 ms (FindLiveObjects: 0.572500 ms CreateObjectMapping: 0.175500 ms MarkObjects: 3.045500 ms  DeleteObjects: 0.301600 ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 16.41 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 6210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (369.7 KB). Loaded Objects now: 6684.
+Memory consumption went from 230.8 MB to 230.4 MB.
+Total: 4.759300 ms (FindLiveObjects: 0.645400 ms CreateObjectMapping: 0.155700 ms MarkObjects: 3.603300 ms  DeleteObjects: 0.353200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -207,520 +207,169 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1514823.181550 seconds.
-  path: Assets/Imports/Nuages/Models/Materials
-  artifactKey: Guid(3c4bf04abe207cd458b94b507d0d169d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Materials using Guid(3c4bf04abe207cd458b94b507d0d169d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a511a154b34b0e06667f3af0694130a0') in 0.002170 seconds
+  Time since last request: 1536207.602493 seconds.
+  path: Assets/Autre
+  artifactKey: Guid(19b20acb24643a045bbcaaf9c66bb7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autre using Guid(19b20acb24643a045bbcaaf9c66bb7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328282cc0789c80cfd17e254e9fee631') in 0.002652 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Imports/Nuages/Scenes
-  artifactKey: Guid(d676f097bff2ed5428f8427a46130e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Scenes using Guid(d676f097bff2ed5428f8427a46130e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0169a128001857cc0498e2235dfc7b2') in 0.000458 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_13.prefab
+  artifactKey: Guid(b8565f1c512d09842b4c4a528e1d0603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_13.prefab using Guid(b8565f1c512d09842b4c4a528e1d0603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbae1101efe43ab220b14ff6b0b56e2a') in 0.397931 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G2.prefab
-  artifactKey: Guid(20822131f7a068849967c4eb0328c80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G2.prefab using Guid(20822131f7a068849967c4eb0328c80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070cdbf37c527719abf042cc1f792d5b') in 0.245333 seconds
+  Time since last request: 0.000033 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_13.prefab
+  artifactKey: Guid(c267e75a40b7590439ccd259e06fbc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_13.prefab using Guid(c267e75a40b7590439ccd259e06fbc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfca0d41d78116e6ad6a729ac17a497') in 0.133041 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Imports/Nuages/Prefabs
-  artifactKey: Guid(b924b28d3c8aaba42af99c9ff2212c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs using Guid(b924b28d3c8aaba42af99c9ff2212c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede3fe1fd3067347ae651cc104dd06b0') in 0.000510 seconds
+  Time since last request: 0.000038 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_07.prefab
+  artifactKey: Guid(b9160a3181d48a74fa6074e202e497be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_07.prefab using Guid(b9160a3181d48a74fa6074e202e497be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b309623e1f4594250a3805773550e4ac') in 0.137161 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Stratus_G2.prefab
-  artifactKey: Guid(bcea47ee6f529ae49bd4e17c7203013a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Stratus_G2.prefab using Guid(bcea47ee6f529ae49bd4e17c7203013a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf40bd150025120ed15c88fc3f000b22') in 0.015285 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 32
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab
-  artifactKey: Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab using Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da12fcfd5fe9b2692309ab9e06c19c65') in 0.021551 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Imports/Nuages
-  artifactKey: Guid(38b28f49e307432488cd4f6d6747de9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages using Guid(38b28f49e307432488cd4f6d6747de9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c120413ec78092b210eb237f44654071') in 0.000499 seconds
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_06.prefab
+  artifactKey: Guid(19156f3baa3e71f479bbf29aa6d08f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_06.prefab using Guid(19156f3baa3e71f479bbf29aa6d08f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97d8530766a02b963547e84fbe9159e') in 0.050813 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G2.prefab
-  artifactKey: Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G2.prefab using Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaad732f5b10a2e3ab00a52ab2fb1da9') in 0.017658 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Imports/Nuages/Models/Cloud_Cumulus_Fluffy.fbx
-  artifactKey: Guid(a6acf282455bcbe49b74fd34fff0a6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Cloud_Cumulus_Fluffy.fbx using Guid(a6acf282455bcbe49b74fd34fff0a6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6f8fd2054857e1efd00c0d5bbe40d8') in 0.032057 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Strato_G2.prefab
-  artifactKey: Guid(79f3726e667d7254296b8aef52d0f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Strato_G2.prefab using Guid(79f3726e667d7254296b8aef52d0f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151a38b863e00e0513fcfe7ecde55941') in 0.013440 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Imports/Nuages/Models/Materials/Clouds_Strato.mat
-  artifactKey: Guid(3caf37f89b2b5444ca6a473c8a1d70c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Materials/Clouds_Strato.mat using Guid(3caf37f89b2b5444ca6a473c8a1d70c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd977c286cd9130b1175734d52dc67de') in 0.020651 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Imports/Nuages/Models/Materials/Cloud_cumulus.mat
-  artifactKey: Guid(6b9f3ceb7b8a4494b81c12bb67f6a014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Materials/Cloud_cumulus.mat using Guid(6b9f3ceb7b8a4494b81c12bb67f6a014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49325d74543a1e71e2f1c55203278bcc') in 0.007238 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Imports/Nuages/Models/Cloud_Strato.fbx
-  artifactKey: Guid(85c7b36c43c3b5d4bb144cc09fc55f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Cloud_Strato.fbx using Guid(85c7b36c43c3b5d4bb144cc09fc55f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a84154c3a99336637493eb3063b92a3') in 0.016836 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Imports/Nuages/Models/Cloud_Swirls.fbx
-  artifactKey: Guid(a546d0066a2fa09418bbc5158bf3fee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Cloud_Swirls.fbx using Guid(a546d0066a2fa09418bbc5158bf3fee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65503fc48476ba68a407234188ff13d2') in 0.017095 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Imports/Nuages/Models
-  artifactKey: Guid(852c4fbed6faab340add9cbaa3092d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models using Guid(852c4fbed6faab340add9cbaa3092d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b74cf34ce3ea51f1609699d984c1a4d') in 0.000600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulus_G2.prefab
-  artifactKey: Guid(e5a9e0b66bb8a8b47a28819231a34fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulus_G2.prefab using Guid(e5a9e0b66bb8a8b47a28819231a34fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692c3041e68ebdd998f835ecf4c06dcc') in 0.014837 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulus_G1.prefab
-  artifactKey: Guid(decc2ba5add7b984aab134a07b436422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulus_G1.prefab using Guid(decc2ba5add7b984aab134a07b436422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61560e62f864562081aa1d43948cff62') in 0.016387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 195.779684 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab
-  artifactKey: Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab using Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4452189cbb33574ce55bbd824327f9') in 0.022029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G2.prefab
-  artifactKey: Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G2.prefab using Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0dd9a4c2a86e64f677b1c332e758ca') in 0.013035 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Strato_G2.prefab
-  artifactKey: Guid(79f3726e667d7254296b8aef52d0f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Strato_G2.prefab using Guid(79f3726e667d7254296b8aef52d0f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75943f03582bdb25324fb8cda7f440b0') in 0.014129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G1.prefab
-  artifactKey: Guid(b94cc7cff6b6e2645a5e7c1ce686314b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G1.prefab using Guid(b94cc7cff6b6e2645a5e7c1ce686314b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362955053e46419eeb0f725160ebe347') in 0.014084 seconds
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_07.prefab
+  artifactKey: Guid(cc8eeb8d11ef6ca45840817706c4ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_07.prefab using Guid(cc8eeb8d11ef6ca45840817706c4ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f772e5f5223e4b607500af4756dd212b') in 0.774086 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 7.881978 seconds.
-  path: Assets/Autre/LeanTween/Examples/Models/2dText.fbx
-  artifactKey: Guid(c0f35ff1d23074af5bcd82d9caa31ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/LeanTween/Examples/Models/2dText.fbx using Guid(c0f35ff1d23074af5bcd82d9caa31ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcd84d5d148378b7b2a617da340a444') in 0.040564 seconds
+  Time since last request: 0.000096 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_08.prefab
+  artifactKey: Guid(63b7797f8b252df419e5c409c8b1b290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_08.prefab using Guid(63b7797f8b252df419e5c409c8b1b290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecaab8267800326ba879fbb6b1c401ed') in 0.149595 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.044425 seconds.
-  path: Assets/Autre/LeanTween/Examples/Prefabs/Avatar2dParticles.prefab
-  artifactKey: Guid(d50011a464d5f44ccbfefb117020e5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/LeanTween/Examples/Prefabs/Avatar2dParticles.prefab using Guid(d50011a464d5f44ccbfefb117020e5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ac9f27309e6e71a03aad6e01bef172') in 0.170052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Autre/LeanTween/Examples/Prefabs/AvatarDiffuse.prefab
-  artifactKey: Guid(992f36b41308f41f1bc39908c2c27dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/LeanTween/Examples/Prefabs/AvatarDiffuse.prefab using Guid(992f36b41308f41f1bc39908c2c27dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fa944dd9d59c107d4b123cdaa1c3db') in 0.018706 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 2.086703 seconds.
-  path: Assets/Autre/LeanTween/Examples/Prefabs/AvatarEventsCS.prefab
-  artifactKey: Guid(3c9c5d81a80e84e90af37f2113c12b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/LeanTween/Examples/Prefabs/AvatarEventsCS.prefab using Guid(3c9c5d81a80e84e90af37f2113c12b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9633a3b7e482fa92b27b28669c7e393') in 0.030336 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.015598 seconds.
-  path: Assets/Autre/LeanTween/Examples/Prefabs/AvatarSpace.prefab
-  artifactKey: Guid(e02878730c48147bb9fc414aabee207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/LeanTween/Examples/Prefabs/AvatarSpace.prefab using Guid(e02878730c48147bb9fc414aabee207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593eb74a447ced9623ea60c5ac71f87a') in 0.145275 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.011462 seconds.
-  path: Assets/Autre/LeanTween/Examples/Models/BasicExamplesText.fbx
-  artifactKey: Guid(803bfbdea65eb4ebe96e481875403860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/LeanTween/Examples/Models/BasicExamplesText.fbx using Guid(803bfbdea65eb4ebe96e481875403860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eaf0db187ad42b2947e50dfffbd95cd') in 0.053129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.281527 seconds.
-  path: Assets/Imports/Nuages/Models/Cloud_Cumulus.fbx
-  artifactKey: Guid(6e253dc59c001e44ab9d35ee01215549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Cloud_Cumulus.fbx using Guid(6e253dc59c001e44ab9d35ee01215549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a490dc332b85e89b8941c0a6a49fcd1f') in 0.024038 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Imports/Nuages/Models/Clouds_cumulonimbus.fbx
-  artifactKey: Guid(84bc9d52f9a093247beae982bd6c37d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Clouds_cumulonimbus.fbx using Guid(84bc9d52f9a093247beae982bd6c37d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd67064b5e6f4708a71904d1d010fcaf') in 0.018323 seconds
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_01.prefab
+  artifactKey: Guid(860ade0594eaba94d888d4073f07a490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_01.prefab using Guid(860ade0594eaba94d888d4073f07a490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcff49ca97b0408b5ba4a4c08652098') in 0.057462 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 103.651987 seconds.
-  path: Assets/Imports/Nuages/Models/Cloud_Strato.fbx
-  artifactKey: Guid(85c7b36c43c3b5d4bb144cc09fc55f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Cloud_Strato.fbx using Guid(85c7b36c43c3b5d4bb144cc09fc55f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f268acc75127dea14feae16a63a222') in 0.027242 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_06.prefab
+  artifactKey: Guid(94fb20e1620258e418f7b0d13d1cac62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_06.prefab using Guid(94fb20e1620258e418f7b0d13d1cac62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eee18ae7d4792aabc918dfe8d7e5316') in 0.134225 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
-  Time since last request: 21.005087 seconds.
-  path: Assets/Autre/XRI_Examples/UI_3D/Prefabs/ClawMachine.prefab
-  artifactKey: Guid(c20ce57c53543934a8ea4b804db7829d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/XRI_Examples/UI_3D/Prefabs/ClawMachine.prefab using Guid(c20ce57c53543934a8ea4b804db7829d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd2f71fd3fa4b42c74eaf7071c2180b') in 0.968115 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_12.prefab
+  artifactKey: Guid(b2c2eaa77adbe704690e52a50768f2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_12.prefab using Guid(b2c2eaa77adbe704690e52a50768f2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac21b92968636a82605abf8b6d753c2') in 0.120747 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 456
-========================================================================
-Received Import Request.
-  Time since last request: 117.740490 seconds.
-  path: Assets/Autre/XRI_Examples/Environment/Prefabs/CeilingLight.prefab
-  artifactKey: Guid(e32b4b710b5ec5b42ba84b234d6ae851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Autre/XRI_Examples/Environment/Prefabs/CeilingLight.prefab using Guid(e32b4b710b5ec5b42ba84b234d6ae851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bcd7a4a962ece3b795c0b333c829956') in 0.002946 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 40.130699 seconds.
-  path: Assets/Imports/Nuages/Models/Materials/Cloud_cumulus.mat
-  artifactKey: Guid(6b9f3ceb7b8a4494b81c12bb67f6a014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Materials/Cloud_cumulus.mat using Guid(6b9f3ceb7b8a4494b81c12bb67f6a014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a242fe0be19f35152e3538265912aa94') in 0.014366 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Imports/Nuages/Models/Materials/Clouds_Swirls.mat
-  artifactKey: Guid(012ff92e38d62cc49959d9c8454d59b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Materials/Clouds_Swirls.mat using Guid(012ff92e38d62cc49959d9c8454d59b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac40dae666b93bf05da1fea753372af') in 0.013072 seconds
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_04.prefab
+  artifactKey: Guid(4d5b4465b0d6b9e42baff27d66b0412f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_04.prefab using Guid(4d5b4465b0d6b9e42baff27d66b0412f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe75711018876210eb9bf0f4d6cb784f') in 0.138318 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
-  Time since last request: 19.245489 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab
-  artifactKey: Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab using Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8d87ece6a2fd8048b18253e916e792') in 0.009613 seconds
+  Time since last request: 0.000032 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_05.prefab
+  artifactKey: Guid(7687015455c3198469fa6fdce8f980ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_05.prefab using Guid(7687015455c3198469fa6fdce8f980ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a41a87acfd8f2147919a732697ece5') in 0.087762 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 13.613107 seconds.
-  path: Assets/Imports/Nuages/Models/Cloud_Cumulus_Fluffy.fbx
-  artifactKey: Guid(a6acf282455bcbe49b74fd34fff0a6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Cloud_Cumulus_Fluffy.fbx using Guid(a6acf282455bcbe49b74fd34fff0a6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03195e8c459581ff22e387b64e6f1102') in 0.016888 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_12.prefab
+  artifactKey: Guid(aaaa0425fc80efb429f1069683d5c290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_12.prefab using Guid(aaaa0425fc80efb429f1069683d5c290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14dc83d3b4f8437401271e598456837f') in 0.082386 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 379.732230 seconds.
-  path: Assets/Imports/Nuages/Models/Materials/Clouds_cumulonimbus.mat
-  artifactKey: Guid(2fa1edf430f612945a70dd86b50e2479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Models/Materials/Clouds_cumulonimbus.mat using Guid(2fa1edf430f612945a70dd86b50e2479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4eebd8ea65c9b82af23b02b5e799c0') in 0.014986 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_10.prefab
+  artifactKey: Guid(6e75424edaedeb6419c9dd3da010b7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/PC_Baseball_Bat_10.prefab using Guid(6e75424edaedeb6419c9dd3da010b7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25fd2348c600365da15070e1e9a3817') in 0.226678 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
-  Time since last request: 594.164590 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab
-  artifactKey: Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Cumulonimbus_G1.prefab using Guid(7a7ada80b7910bb47aa7c5434361abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae45040a59bc21ee0d9aca2fa30ed5e9') in 0.022240 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_02.prefab
+  artifactKey: Guid(dfa437938e5b73f46baaf326c46ad1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_02.prefab using Guid(dfa437938e5b73f46baaf326c46ad1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda9a7d647ef5f72731f1ad6f3e7bd43') in 0.110181 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G2.prefab
-  artifactKey: Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G2.prefab using Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a9b54d10c5715fa0e59acf534b2cef') in 0.008508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Strato_G1.prefab
-  artifactKey: Guid(9ee1a2ad264aa2040bef16ca093d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Strato_G1.prefab using Guid(9ee1a2ad264aa2040bef16ca093d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3a583b17c3386a060d0428a1956b76') in 0.013632 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G1.prefab
-  artifactKey: Guid(b94cc7cff6b6e2645a5e7c1ce686314b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Nuages/Prefabs/Clouds_Swirls_G1.prefab using Guid(b94cc7cff6b6e2645a5e7c1ce686314b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a614102cbff7b22e935f56c43e8047') in 0.009543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.429 seconds
-Refreshing native plugins compatible for Editor in 11.42 ms, found 12 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <787acc3c9a4c471ba7d971300105af24>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <2e279d988b9d4542841de511fbfdf8c2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.319 seconds
-Domain Reload Profiling: 1748ms
-	BeginReloadAssembly (170ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (193ms)
-		LoadAssemblies (262ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1320ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (463ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (301ms)
-			ProcessInitializeOnLoadMethodAttributes (79ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 13.93 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 6023 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 71 unused Assets / (366.9 KB). Loaded Objects now: 6769.
-Memory consumption went from 204.0 MB to 203.7 MB.
-Total: 5.437500 ms (FindLiveObjects: 0.803800 ms CreateObjectMapping: 0.182400 ms MarkObjects: 4.170700 ms  DeleteObjects: 0.279900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.455 seconds
-Refreshing native plugins compatible for Editor in 14.29 ms, found 12 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <787acc3c9a4c471ba7d971300105af24>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <2e279d988b9d4542841de511fbfdf8c2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.290 seconds
-Domain Reload Profiling: 1744ms
-	BeginReloadAssembly (173ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (288ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (22ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1291ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (487ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (322ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 12.40 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 6023 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 70 unused Assets / (334.6 KB). Loaded Objects now: 6774.
-Memory consumption went from 203.9 MB to 203.6 MB.
-Total: 4.109800 ms (FindLiveObjects: 0.741000 ms CreateObjectMapping: 0.172400 ms MarkObjects: 3.005000 ms  DeleteObjects: 0.190400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 8330.598784 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(6191d60055d1f884581c9820b5d360ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(6191d60055d1f884581c9820b5d360ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Cloud_Cumulus must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (artifact id: '36cefed5744bf55a40ab1490d8173966') in 0.043244 seconds
+  Time since last request: 15.274872 seconds.
+  path: Assets/Autre/XRI_Examples/Props/Models/Primitive_Wedge.fbx
+  artifactKey: Guid(5f9090446b6c3f64cb377e4842aa7f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autre/XRI_Examples/Props/Models/Primitive_Wedge.fbx using Guid(5f9090446b6c3f64cb377e4842aa7f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd9d836eb8a68816cb2690096d8a5e2') in 0.052776 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 2.067806 seconds.
-  path: Assets/Scenes/Test.unity
-  artifactKey: Guid(eccb2bc76074b2849b626b75e749890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test.unity using Guid(eccb2bc76074b2849b626b75e749890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99be912b1ba1ea9684abeccae1c59e4d') in 0.014542 seconds
+  Time since last request: 2.308092 seconds.
+  path: Assets/Autre/XRI_Examples/ActivateInteractables/Models/Lighter.fbx
+  artifactKey: Guid(883ee748a21107b48a7f86fe43b7169d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autre/XRI_Examples/ActivateInteractables/Models/Lighter.fbx using Guid(883ee748a21107b48a7f86fe43b7169d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0354c233eaf8fec9dbed7d3afeefa71') in 0.057631 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.574130 seconds.
+  path: Assets/Autre/XRI_Examples/UI_3D/Models/Lever.fbx
+  artifactKey: Guid(a39b6d1af189d1f49a583af3af3d2ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autre/XRI_Examples/UI_3D/Models/Lever.fbx using Guid(a39b6d1af189d1f49a583af3af3d2ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6679f6bf34a64c8eca9be10fef6bfa5f') in 0.026768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.048997 seconds.
+  path: Assets/Autre/LeanTween/Examples/Models/LeanTween-Icon.fbx
+  artifactKey: Guid(6fc4240da91ab4747a411a8313faed53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autre/LeanTween/Examples/Models/LeanTween-Icon.fbx using Guid(6fc4240da91ab4747a411a8313faed53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec24b3bfb1f8d329a198103e6ea8542') in 0.049461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 15.143202 seconds.
+  path: Assets/Autre/LeanTween/Examples/Material/FrictionLess.physicMaterial
+  artifactKey: Guid(1560575207a7b4f27bcd4ab2aeb2e3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Autre/LeanTween/Examples/Material/FrictionLess.physicMaterial using Guid(1560575207a7b4f27bcd4ab2aeb2e3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ce9f490a536e7e3549eb083291ac5f') in 0.001178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.710022 seconds.
+  path: Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_01.prefab
+  artifactKey: Guid(860ade0594eaba94d888d4073f07a490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Baseball Bats/Assets/Prefabs/Mob_Baseball_Bat_01.prefab using Guid(860ade0594eaba94d888d4073f07a490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f5452e2e5a846b0150afc10927b5e4') in 0.010666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24

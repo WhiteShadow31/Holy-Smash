@@ -9,7 +9,7 @@ public class SC_Mob : MonoBehaviour {
 
     //Ref aux target sur la scène
     public GameObject target1;
-    public GameObject target2;
+    //public GameObject target2;
 
     //Vitesse de déplacement du mob
     public float vitesseMarche = 10f;

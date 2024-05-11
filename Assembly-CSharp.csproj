@@ -106,6 +106,7 @@
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Props\Scripts\TargetRing.cs" />
     <Compile Include="Assets\Scripts_QD\SC_Mob.cs" />
+    <Compile Include="Assets\Scripts_QD\SC_DestroyMob.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\PathSplines.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\VRWalkthrough\Scripts\UI\TurnToFace.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\LocomotionManager.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Assets\Autre\LeanTween\Examples\Archived\TestingPunch.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\OnVelocity.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\XRInfiniteInteractable.cs" />
+    <Compile Include="Assets\Scripts_QD\SC_SpawnMob.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\KeyLockSystem\Lock.cs" />
     <Compile Include="Assets\Autre\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
@@ -143,10 +145,11 @@
     <Compile Include="Assets\Autre\XRI_Examples\UI_3D\Scripts\XRLever.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\Analytics\Events\EditorEvent.cs" />
-    <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\InputMediator.cs" />
     <Compile Include="Assets\Autre\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\InputMediator.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\ObjectReset.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\KeyLockSystem\Key.cs" />
+    <Compile Include="Assets\Scripts_QD\SC_Wall.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\Analytics\Behaviours\XrcSocketInteractorsStationAnalytics.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Props\Scripts\Breakable.cs" />
@@ -980,14 +983,14 @@
     <Reference Include="Unity.InputSystem">
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus">
       <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>

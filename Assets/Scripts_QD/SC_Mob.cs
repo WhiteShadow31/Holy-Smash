@@ -32,7 +32,8 @@ public class SC_Mob : MonoBehaviour {
         
         //Déplacement du mob vers le premier target
         //this.transform.position = Vector3.MoveTowards(this.transform.position, target1.transform.position, vitesseMarche * Time.deltaTime);
-        m_agent.destination = target1.transform.position;
+        
+        //m_agent.destination = target1.transform.position;
 
         //Calcul de la direction du mob pour récupérer son forward
         //Vector3 mobDirection = target1.transform.position - transform.position;

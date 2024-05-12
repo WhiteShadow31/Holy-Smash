@@ -8,6 +8,8 @@ public class SC_SpawnMob : MonoBehaviour {
     public GameObject plateform;
     public float speedPlateform = 0.5f;
 
+    public GameObject batte;
+
     void Start() {
         
     }
@@ -27,4 +29,10 @@ public class SC_SpawnMob : MonoBehaviour {
 
     //    plateform.transform.Translate(new Vector3(8.25f, -0.1f, 0) * speedPlateform * Time.deltaTime);
     //}
+
+    public void spawnBatte() {
+
+        //Destroy(batte);
+        Instantiate(batte, new Vector3(6, 0.5f, -2), Quaternion.identity);
+    }
 }

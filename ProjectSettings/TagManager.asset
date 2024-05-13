@@ -9,6 +9,7 @@ TagManager:
   - Water
   - Destroyer
   - Porte G
+  - Mob
   layers:
   - Default
   - TransparentFX

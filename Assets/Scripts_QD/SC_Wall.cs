@@ -108,14 +108,29 @@ public class SC_Wall : MonoBehaviour {
 
             case 1:
                 this.transform.position = new Vector3(this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
+                if (GetComponent<SC_DestroyMob>().scoredetection == true)
+                {
+
+                    score += 100;
+                }
                 break;
 
             case 2:
                 this.transform.position = new Vector3(this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
+                if (GetComponent<SC_DestroyMob>().scoredetection == true)
+                {
+
+                    score += 200;
+                }
                 break;
 
             case 3:
                 this.transform.position = new Vector3(this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
+                if (GetComponent<SC_DestroyMob>().scoredetection == true)
+                {
+
+                    score += 300;
+                }
                 break;
         }
     }

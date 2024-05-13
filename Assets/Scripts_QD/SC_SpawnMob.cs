@@ -21,7 +21,7 @@ public class SC_SpawnMob : MonoBehaviour {
 
         //plateform.transform.Translate(new Vector3(8.25f, -2.1f, 0) * speedPlateform * Time.deltaTime);
         //mob.transform.position = new Vector3(plateform.transform.position.x, plateform.transform.position.y, plateform.transform.position.z + 0.2f);
-        Instantiate(mob, new Vector3(plateform.transform.position.x, plateform.transform.position.y, plateform.transform.position.z + 0.2f), Quaternion.identity);
+        Instantiate(mob, new Vector3(plateform.transform.position.x, plateform.transform.position.y + 1.5f, plateform.transform.position.z), Quaternion.identity);
         //Invoke("mouvingPlateform", 1f);
     }
 

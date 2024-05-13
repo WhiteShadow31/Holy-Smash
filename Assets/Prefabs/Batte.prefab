@@ -181,8 +181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f65790bd0be2445948538342ee1a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mob: {fileID: 0}
-  impultionForce: 20
+  impultionForce: 15
+  nbHit: 0
+  slowMotionTimeScale: 0.1
 --- !u!114 &8766039814568817209
 MonoBehaviour:
   m_ObjectHideFlags: 0

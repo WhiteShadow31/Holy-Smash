@@ -100196,6 +100196,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 6943090188941455447, guid: 5991e4ef9ac0f18458fdab458a14ac64,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 2005463541}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100215,6 +100220,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89e204856c59f9343919d21a346b2990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2005463541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3296065611831277657, guid: 5991e4ef9ac0f18458fdab458a14ac64,
+    type: 3}
+  m_PrefabInstance: {fileID: 2005463539}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2005980057

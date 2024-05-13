@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SC_Wall : MonoBehaviour {
 
@@ -13,7 +14,7 @@ public class SC_Wall : MonoBehaviour {
     public int i = 0;
     public int d = 0;
 
-    public Text scoreText;
+    public TMP_Text scoreText;
     public int score;
 
     void Start() {

@@ -18,11 +18,11 @@ public class SC_Mob : MonoBehaviour {
 
     //public Vector3 mobDir;
 
-    private void Awake() {
+    //private void Awake() {
 
-        m_agent = GetComponent<NavMeshAgent>();
-        m_agent.speed = vitesseMarche;
-    }
+    //    m_agent = GetComponent<NavMeshAgent>();
+    //    m_agent.speed = vitesseMarche;
+    //}
 
     void Start() {
         
@@ -42,17 +42,17 @@ public class SC_Mob : MonoBehaviour {
         //Debug.Log(GetComponent<Rigidbody>().useGravity);
     }
 
-    public void OnCollisionEnter(Collision collision) {
+    //public void OnCollisionEnter(Collision collision) {
 
-        if (collision.gameObject.tag == "Destroyer") {
+    //    if (collision.gameObject.tag == "Destroyer") {
 
-            GetComponent<Rigidbody>().useGravity = false;
-            Invoke("SetOnGravity", 5f);
-        }
-    }
+    //        GetComponent<Rigidbody>().useGravity = false;
+    //        Invoke("SetOnGravity", 5f);
+    //    }
+    //}
 
-    public void SetOnGravity() {
+    //public void SetOnGravity() {
 
-        GetComponent<Rigidbody>().useGravity = true;
-    }
+    //    GetComponent<Rigidbody>().useGravity = true;
+    //}
 }

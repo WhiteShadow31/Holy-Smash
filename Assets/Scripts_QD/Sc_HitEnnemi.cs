@@ -7,7 +7,7 @@ public class Sc_HitEnnemi : MonoBehaviour
 {
 
     //public GameObject mob;
-    public float impultionForce = 15f;
+    public float impultionForce = 30f;
     //public Vector3 impulseVector = new Vector3(10f, 10f, 0f);
 
     public int nbHit = 0;
@@ -28,7 +28,7 @@ public class Sc_HitEnnemi : MonoBehaviour
 
         //var gamepad = Gamepad.current;
 
-        if (nbHit >= 5 /*&&*/  /*Input.GetButtonDown("Nom de la touche")*/) {
+        if (nbHit >= 5 /*&&*/  /*Input.GetKeyDown("Space")*/) {
 
             impultionForce = 50f;
             StartSlowMotion();
@@ -44,7 +44,7 @@ public class Sc_HitEnnemi : MonoBehaviour
         if (collider.gameObject.tag == "Mob")
         {
 
-            collider.rigidbody.AddForce(Vector3.forward * impultionForce, ForceMode.Impulse);
+            //collider.rigidbody.AddForce(Vector3.forward * impultionForce, ForceMode.Impulse);
             collider.rigidbody.AddForce(Vector3.up * impultionForce, ForceMode.Impulse);
             nbHit++;
         } 

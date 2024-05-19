@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class SC_SpawnMob : MonoBehaviour {
+
+    //public List<GameObject> controllerPrefabs;
+    //private InputDevice _targetDeviceL;
 
     public GameObject mob;
     public GameObject plateform;
@@ -10,11 +14,29 @@ public class SC_SpawnMob : MonoBehaviour {
 
     public GameObject batte;
 
+    public AudioSource claquementDoigt;
+
     void Start() {
-        
+
+        //List<InputDevice> devices = new List<InputDevice>();
+        //InputDeviceCharacteristics leftControlCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
+        //InputDevices.GetDevicesWithCharacteristics(leftControlCharacteristics, devices);
+
+        //if (devices.Count > 0)
+        //{
+        //    _targetDeviceL = devices[0];
+        //    GameObject prefab = controllerPrefabs.Find(controller => controller.name == _targetDeviceL.name);
+        //}
     }
     void Update() {
-        
+
+        //_targetDeviceL.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
+        //if(triggerValue == 1) {
+
+        //    Debug.Log("claquement");
+        //    claquementDoigt.Play();
+        //    spawnMob();
+        //}
     }
 
     public void spawnMob() {

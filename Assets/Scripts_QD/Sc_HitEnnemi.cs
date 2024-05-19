@@ -6,7 +6,7 @@ using UnityEngine.XR;
 
 public class Sc_HitEnnemi : MonoBehaviour
 {
-    private InputDevice _targetDevice;
+    private InputDevice _targetDeviceR;
 
 
     //public GameObject mob;
@@ -34,7 +34,7 @@ public class Sc_HitEnnemi : MonoBehaviour
 
         if(devices.Count > 0)
         {
-            _targetDevice = devices[0];
+            _targetDeviceR = devices[0];
         }
 
         startTimeScale = Time.timeScale;
@@ -43,7 +43,7 @@ public class Sc_HitEnnemi : MonoBehaviour
 
     void Update() {
 
-        _targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
+        _targetDeviceR.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
 
         //var gamepad = Gamepad.current;
 

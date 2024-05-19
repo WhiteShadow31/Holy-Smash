@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+//using UnityEngine.InputSystem;
+using UnityEngine.XR;
 
 public class Sc_HitEnnemi : MonoBehaviour
 {
+    private InputDevice _targetDevice;
+
 
     //public GameObject mob;
     public float impultionForce = 30f;
@@ -20,15 +23,31 @@ public class Sc_HitEnnemi : MonoBehaviour
 
     void Start() {
 
+        List<InputDevice> devices = new List<InputDevice>();
+        InputDeviceCharacteristics rightControlCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(rightControlCharacteristics, devices);
+
+        //foreach (var item in devices) {
+
+        //    Debug.Log(item.name + item.characteristics);
+        //}
+
+        if(devices.Count > 0)
+        {
+            _targetDevice = devices[0];
+        }
+
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
     }
 
     void Update() {
 
+        _targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
+
         //var gamepad = Gamepad.current;
 
-        if (nbHit >= 5 /*&&*/  /*Input.GetKeyDown("Space")*/) {
+        if (nbHit >= 5 && triggerValue == 1 /*Input.GetKeyDown("Space")*/) {
 
             impultionForce = 50f;
             StartSlowMotion();

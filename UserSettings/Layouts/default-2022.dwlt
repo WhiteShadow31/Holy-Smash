@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 1167
     height: 726
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -245,15 +245,15 @@ MonoBehaviour:
     y: 726
     width: 1519
     height: 221
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1995,9 +1995,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 17.187561, y: -1.715039, z: -1.3781909}
+    m_Target: {x: 15.342839, y: 1.2822833, z: -0.6674018}
     speed: 2
-    m_Value: {x: 17.187561, y: -1.715039, z: -1.3781909}
+    m_Value: {x: 15.342839, y: 1.2822833, z: -0.6674018}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2043,9 +2043,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08317588, y: -0.7250616, z: 0.08974614, w: -0.6774846}
+    m_Target: {x: 0.084851526, y: 0.70305663, z: -0.086086564, w: 0.7005486}
     speed: 2
-    m_Value: {x: -0.08305478, y: -0.726196, z: 0.08988553, w: -0.6765071}
+    m_Value: {x: 0.08486564, y: 0.7031735, z: -0.08610088, w: 0.70066506}
   m_Size:
     m_Target: 10
     speed: 2
@@ -2114,7 +2114,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5af8ffff28860000f0900000
+      m_ExpandedIDs: 26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2333,9 +2333,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 64}
-    m_SelectedIDs: f6960000
-    m_LastClickedID: 38646
-    m_ExpandedIDs: 00000000ac960000ae960000b0960000b2960000b4960000b6960000b8960000ba960000bc960000be960000c0960000c2960000c4960000c6960000c8960000ca960000cc960000ce96000000ca9a3b
+    m_SelectedIDs: 6e940000
+    m_LastClickedID: 37998
+    m_ExpandedIDs: 000000002494000026940000289400002a9400002c9400002e94000030940000329400003494000036940000389400003a9400003c9400003e9400004094000042940000449400004694000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2363,7 +2363,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac960000ae960000b0960000b2960000b4960000b6960000b8960000ba960000bc960000be960000c0960000c2960000c4960000c6960000c8960000ca960000cc960000ce960000
+    m_ExpandedIDs: 000000002494000026940000289400002a9400002c9400002e94000030940000329400003494000036940000389400003a9400003c9400003e94000040940000429400004494000046940000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2388,9 +2388,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: a8310000
+    m_LastClickedInstanceID: 12712
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000034790000b6f40000e61e0100b8800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2407,7 +2407,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -2523,9 +2523,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1378
+    x: 1519
     y: 73
-    width: 541
+    width: 400
     height: 926
   m_SerializedDataModeController:
     m_DataMode: 0

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bde186fbe8bb5174ba33bc9cc2a41eba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mob: {instanceID: 0}
+  - plateform: {fileID: 358351496391715438, guid: f5a5262af3ca2d04aa22bab84708b99c,
+      type: 3}
+  - batte: {fileID: 2448211457736536690, guid: d364133a3ff39804285f85070b410dec, type: 3}
+  - claquementDoigt: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

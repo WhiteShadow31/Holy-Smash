@@ -7,14 +7,14 @@ using UnityEngine.AI;
 
 public class SC_Mob : MonoBehaviour {
 
-    //Ref aux target sur la scène
-    public GameObject target1;
+    //Ref aux targets sur la scène
+    //public GameObject target1;
     //public GameObject target2;
 
     //Vitesse de déplacement du mob
-    public float vitesseMarche = 10f;
+    //public float vitesseMarche = 10f;
 
-    protected NavMeshAgent m_agent;
+    //protected NavMeshAgent m_agent;
 
     //public Vector3 mobDir;
 

@@ -120,7 +120,6 @@
     <Compile Include="Assets\Autre\LeanTween\Examples\Archived\TestingPunch.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\OnVelocity.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\XRInfiniteInteractable.cs" />
-    <Compile Include="Assets\Scripts_QD\SC_SpawnMob.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\KeyLockSystem\Lock.cs" />
     <Compile Include="Assets\Autre\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
@@ -160,6 +159,7 @@
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\KeyLockSystem\IKeychain.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\SocketInteractors\Scripts\XRLockSocketInteractor.cs" />
     <Compile Include="Assets\Autre\LeanTween\Framework\LTDescr.cs" />
+    <Compile Include="Assets\Scripts_QD\SC_Spawner.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\UI_3D\Scripts\ClawMachine\FlippyDoor.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\GeneralSequencer.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\PathSpline.cs" />

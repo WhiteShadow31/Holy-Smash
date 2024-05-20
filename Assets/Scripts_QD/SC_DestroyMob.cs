@@ -15,12 +15,14 @@ public class SC_DestroyMob : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        Debug.Log(scoredetection);
     }
 
     public void OnTriggerEnter(Collider collision) {
 
-        StartCoroutine(waitCoroutine());
         scoredetection = true;
+        StartCoroutine(waitCoroutine());
+        Invoke("waitCoroutine", 3f);
         Destroy(collision.gameObject);
     }
 

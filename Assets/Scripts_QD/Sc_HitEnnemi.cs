@@ -21,6 +21,8 @@ public class Sc_HitEnnemi : MonoBehaviour
     private float startTimeScale;
     private float startFixedDeltaTime;
 
+    public bool mobHit = false;
+
     void Start() {
 
         List<InputDevice> devices = new List<InputDevice>();
@@ -51,18 +53,24 @@ public class Sc_HitEnnemi : MonoBehaviour
 
             impultionForce = 50f;
             StartSlowMotion();
+            if(mobHit == true)
+            {
+                nbHit = 0;
+            }
         } else {
 
             StopSlowMotion();
+            mobHit = false;
         }
         //Debug.Log(mob.mobDir.y);
     }
 
     public void OnCollisionEnter(Collision collider)
     {
+
         if (collider.gameObject.tag == "Mob")
         {
-
+            mobHit = true;
             //collider.rigidbody.AddForce(Vector3.forward * impultionForce, ForceMode.Impulse);
             collider.rigidbody.AddForce(Vector3.up * impultionForce, ForceMode.Impulse);
             nbHit++;

@@ -11,8 +11,8 @@ public class SC_Wall : MonoBehaviour {
     public GameObject child2;
     public GameObject child3;
 
-    public int i = 0;
-    public int d = 0;
+    public int i;
+    public int d;
 
     public TMP_Text scoreText;
     public int score;
@@ -23,24 +23,17 @@ public class SC_Wall : MonoBehaviour {
         child1 = transform.GetChild(1).gameObject;
         child2 = transform.GetChild(2).gameObject;
         child3 = transform.GetChild(3).gameObject;
+        i = 0;
+        d = 0;
     }
 
     void Update() {
 
+        changePhase();
         scoreText.text = "Score : " + score;
     }
 
-    public void changeDifficulty() {
-
-
-
-        if(i > 3) {
-
-            i = 0;
-        } else {
-
-            i += 1;
-        }
+    public void changePhase() {
 
         switch (i) {
 
@@ -52,6 +45,7 @@ public class SC_Wall : MonoBehaviour {
                 if(GetComponent<SC_DestroyMob>().scoredetection == true) {
 
                     score += 100;
+                    i++;
                 }
                 break;
 
@@ -63,6 +57,7 @@ public class SC_Wall : MonoBehaviour {
                 if (GetComponent<SC_DestroyMob>().scoredetection == true) {
 
                     score += 200;
+                    i++;
                 }
                 break;
 
@@ -74,6 +69,7 @@ public class SC_Wall : MonoBehaviour {
                 if (GetComponent<SC_DestroyMob>().scoredetection == true) {
 
                     score += 300;
+                    i++;
                 }
                 break;
 

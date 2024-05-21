@@ -10,7 +10,7 @@ public class SC_Spawner : MonoBehaviour {
 
     public GameObject mob;
 
-    public GameObject plateform;
+    //public GameObject plateform;
     //public float speedPlateform = 0.5f;
 
     public GameObject batte;
@@ -46,8 +46,9 @@ public class SC_Spawner : MonoBehaviour {
         //mob.transform.position = new Vector3(plateform.transform.position.x, plateform.transform.position.y, plateform.transform.position.z + 0.2f);
         //Invoke("mouvingPlateform", 1f);
         
-        Instantiate(mob, new Vector3(plateform.transform.position.x, plateform.transform.position.y + 1.5f, plateform.transform.position.z), Quaternion.identity);
-        
+        Instantiate(mob, new Vector3(8.5f, 0f, 0), Quaternion.identity);
+        Invoke("CanonMobUp", 1f);
+
         //Instantiate(mob, new Vector3(9f, 2f, 0f), Quaternion.identity);
     }
 
@@ -55,6 +56,11 @@ public class SC_Spawner : MonoBehaviour {
 
     //    plateform.transform.Translate(new Vector3(8.25f, -0.1f, 0) * speedPlateform * Time.deltaTime);
     //}
+
+    public void CanonMobUp() {
+
+        mob.GetComponent<Rigidbody>().AddForce(Vector3.up * 20f, ForceMode.Impulse);
+    }
 
     public void spawnBatte() {
 

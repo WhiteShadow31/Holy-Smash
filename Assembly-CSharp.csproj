@@ -81,6 +81,7 @@
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\OnTilt.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\Global\Scripts\RayAttachModifier.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\HoverHighlight\Scripts\RendererCaptureDepth.cs" />
+    <Compile Include="Assets\Scripts_QD\SC_Mummy.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\HoverHighlight\Scripts\InteractableVisualsController.cs" />
     <Compile Include="Assets\Autre\XRI_Examples\ActivateInteractables\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\Autre\LeanTween\Examples\Scripts\PathBezier2d.cs" />

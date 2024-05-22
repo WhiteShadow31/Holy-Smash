@@ -21,8 +21,15 @@ public class SC_DestroyMob : MonoBehaviour {
     public void OnTriggerEnter(Collider collision) {
 
         scoredetection = true;
-        Destroy(collision.gameObject);
-        StartCoroutine(waitCoroutine(collision));
+        if(collision.gameObject.tag != "Mob" && collision.gameObject.tag != "Batte") {
+
+            collision.transform.position = new Vector3(0, 0, 0);
+
+        } else {
+
+            Destroy(collision.gameObject);
+            //StartCoroutine(waitCoroutine(collision));
+        }
     }
 
     IEnumerator waitCoroutine(Collider collision) {

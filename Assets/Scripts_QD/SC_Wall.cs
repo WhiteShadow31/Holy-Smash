@@ -34,6 +34,8 @@ public class SC_Wall : MonoBehaviour {
 
         scoreText.text = "Score : " + score;
 
+        //=====================================================================================//
+
         if (child0.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
@@ -43,7 +45,7 @@ public class SC_Wall : MonoBehaviour {
             changePhase();
         }
 
-
+        //=====================================================================================//
 
         if (child1.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
@@ -63,7 +65,8 @@ public class SC_Wall : MonoBehaviour {
             child1.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
-        
+
+        //=====================================================================================//
 
         if (child2.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
@@ -92,6 +95,17 @@ public class SC_Wall : MonoBehaviour {
             child2.transform.GetChild(2).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
+
+        //=====================================================================================//
+
+        if (child3.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            score += 400;
+            child3.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
+        }
+
+        //Debug.Log(nbSetActive);
     }
 
     public void changePhase() {
@@ -122,7 +136,7 @@ public class SC_Wall : MonoBehaviour {
 
                 nbSetActive++;
 
-                if (nbSetActive >= 2)
+                if (nbSetActive >= 3)
                 {
 
                     i++;
@@ -131,7 +145,6 @@ public class SC_Wall : MonoBehaviour {
                 break;
 
             case 2:
-                nbSetActive = 0;
 
                 child0.SetActive(false);
                 child1.SetActive(false);
@@ -140,7 +153,7 @@ public class SC_Wall : MonoBehaviour {
 
                 nbSetActive++;
 
-                if (nbSetActive >= 3)
+                if (nbSetActive >= 6)
                 {
 
                     i++;
@@ -153,10 +166,7 @@ public class SC_Wall : MonoBehaviour {
                 child1.SetActive(false);
                 child2.SetActive(false);
                 child3.SetActive(true);
-                if (child3.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true) {
-
-                    score += 400;
-                }
+                
                 break;
         }
     }
@@ -204,5 +214,28 @@ public class SC_Wall : MonoBehaviour {
                 }
                 break;
         }
+    }
+
+    public void ResetAll() {
+
+        i = 0;
+        d = 0;
+        score = 0;
+        nbSetActive = 0;
+
+        //=====================================================================================//
+
+        child1.transform.GetChild(0).gameObject.SetActive(true);
+        child1.transform.GetChild(1).gameObject.SetActive(true);
+
+        //=====================================================================================//
+
+        child2.transform.GetChild(0).gameObject.SetActive(true);
+        child2.transform.GetChild(1).gameObject.SetActive(true);
+        child2.transform.GetChild(2).gameObject.SetActive(true);
+
+        //=====================================================================================//
+
+        changePhase();
     }
 }

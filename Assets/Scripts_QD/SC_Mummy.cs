@@ -12,7 +12,7 @@ public class SC_Mummy : MonoBehaviour {
     void Awake() {
 
         _ragdollRigidbodies = GetComponentsInChildren<Rigidbody>();
-        //DisableRagdoll();
+        DisableRagdoll();
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class SC_Mummy : MonoBehaviour {
     }
     public void OnCollisionEnter(Collision collider) {
 
-        if (collider.gameObject.tag == "Mob") {
+        if (collider.gameObject.tag == "Batte") {
 
             EnableRagdoll();
         }

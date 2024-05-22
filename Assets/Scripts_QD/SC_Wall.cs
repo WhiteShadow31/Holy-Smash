@@ -17,6 +17,8 @@ public class SC_Wall : MonoBehaviour {
     public TMP_Text scoreText;
     public int score;
 
+    public int nbSetActive = 0;
+
     void Start() {
 
         child0 = transform.GetChild(0).gameObject;
@@ -25,12 +27,71 @@ public class SC_Wall : MonoBehaviour {
         child3 = transform.GetChild(3).gameObject;
         i = 0;
         d = 0;
+        scoreText.text = "Score : " + score;
     }
 
     void Update() {
 
-        changePhase();
         scoreText.text = "Score : " + score;
+
+        if (child0.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            changePhase();
+            score += 100;
+            child0.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
+            changePhase();
+        }
+
+
+
+        if (child1.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            child1.transform.GetChild(0).gameObject.SetActive(false);
+            changePhase();
+            score += 200;
+            child1.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
+            changePhase();
+        }
+        if (child1.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            child1.transform.GetChild(1).gameObject.SetActive(false);
+            changePhase();
+            score += 200;
+            child1.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
+            changePhase();
+        }
+        
+
+        if (child2.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            child2.transform.GetChild(0).gameObject.SetActive(false);
+            changePhase();
+            score += 300;
+            child2.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
+            changePhase();
+        }
+        if (child2.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            child2.transform.GetChild(1).gameObject.SetActive(false);
+            changePhase();
+            score += 300;
+            child2.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
+            changePhase();
+        }
+        if (child2.transform.GetChild(2).GetComponent<SC_DestroyMob>().scoredetection == true)
+        {
+
+            child2.transform.GetChild(2).gameObject.SetActive(false);
+            changePhase();
+            score += 300;
+            child2.transform.GetChild(2).GetComponent<SC_DestroyMob>().scoredetection = false;
+            changePhase();
+        }
     }
 
     public void changePhase() {
@@ -42,34 +103,48 @@ public class SC_Wall : MonoBehaviour {
                 child1.SetActive(false);
                 child2.SetActive(false);
                 child3.SetActive(false);
-                if(GetComponent<SC_DestroyMob>().scoredetection == true) {
 
-                    score += 100;
+                nbSetActive++;
+
+                if (nbSetActive >= 0) {
+
                     i++;
+                    nbSetActive = 0;
                 }
                 break;
 
             case 1:
+
                 child0.SetActive(false);
                 child1.SetActive(true);
                 child2.SetActive(false);
                 child3.SetActive(false);
-                if (GetComponent<SC_DestroyMob>().scoredetection == true) {
 
-                    score += 200;
+                nbSetActive++;
+
+                if (nbSetActive >= 2)
+                {
+
                     i++;
+                    nbSetActive = 0;
                 }
                 break;
 
             case 2:
+                nbSetActive = 0;
+
                 child0.SetActive(false);
                 child1.SetActive(false);
                 child2.SetActive(true);
                 child3.SetActive(false);
-                if (GetComponent<SC_DestroyMob>().scoredetection == true) {
 
-                    score += 300;
+                nbSetActive++;
+
+                if (nbSetActive >= 3)
+                {
+
                     i++;
+                    nbSetActive = 0;
                 }
                 break;
 
@@ -78,7 +153,7 @@ public class SC_Wall : MonoBehaviour {
                 child1.SetActive(false);
                 child2.SetActive(false);
                 child3.SetActive(true);
-                if (GetComponent<SC_DestroyMob>().scoredetection == true) {
+                if (child3.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true) {
 
                     score += 400;
                 }

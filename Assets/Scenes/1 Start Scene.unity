@@ -23772,9 +23772,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\tBonjour \xE0 toi cher joueur.\r\nDans ce jeu, tu es le gardien du PARADIS
-    et la vermine ne doit PAS entrer ! Tous les moyens sont bons pour y parvenir
-    alors d\xE9foule toi !\r"
+  m_text: "\tHello dear player.\nIn this game, you're the guardian of PARADISE and
+    your job is to smash vermin because they deserve it ! So, go wild !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b036e831c0c90547b32a8a896d80f79, type: 2}
   m_sharedMaterial: {fileID: 6988543560108305873, guid: cb4516ac98eb5854ea4d7a8f558eb4da,

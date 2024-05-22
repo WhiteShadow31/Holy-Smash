@@ -46,7 +46,7 @@ public class SC_Spawner : MonoBehaviour {
         //mob.transform.position = new Vector3(plateform.transform.position.x, plateform.transform.position.y, plateform.transform.position.z + 0.2f);
         //Invoke("mouvingPlateform", 1f);
         
-        Instantiate(mob, new Vector3(8.5f, 0f, 0), Quaternion.identity);
+        Instantiate(mob, new Vector3(8.25f, 1f, 0), Quaternion.identity);
         Invoke("CanonMobUp", 1f);
 
         //Instantiate(mob, new Vector3(9f, 2f, 0f), Quaternion.identity);
@@ -65,6 +65,6 @@ public class SC_Spawner : MonoBehaviour {
     public void spawnBatte() {
 
         //Destroy(batte);
-        Instantiate(batte, new Vector3(6, 0.5f, -2), Quaternion.identity);
+        Instantiate(batte, new Vector3(7.5f, 1f, -2.5f), Quaternion.identity);
     }
 }

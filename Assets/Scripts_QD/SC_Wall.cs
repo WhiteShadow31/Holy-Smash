@@ -14,6 +14,8 @@ public class SC_Wall : MonoBehaviour {
     public int i;
     public int d;
 
+    public int multiplypts;
+
     public TMP_Text scoreText;
     public int score;
 
@@ -40,7 +42,7 @@ public class SC_Wall : MonoBehaviour {
         {
 
             changePhase();
-            score += 100;
+            score += 100 * multiplypts;
             child0.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
@@ -52,7 +54,7 @@ public class SC_Wall : MonoBehaviour {
 
             child1.transform.GetChild(0).gameObject.SetActive(false);
             changePhase();
-            score += 200;
+            score += 200 * multiplypts;
             child1.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
@@ -61,7 +63,7 @@ public class SC_Wall : MonoBehaviour {
 
             child1.transform.GetChild(1).gameObject.SetActive(false);
             changePhase();
-            score += 200;
+            score += 200 * multiplypts;
             child1.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
@@ -73,7 +75,7 @@ public class SC_Wall : MonoBehaviour {
 
             child2.transform.GetChild(0).gameObject.SetActive(false);
             changePhase();
-            score += 300;
+            score += 300 * multiplypts;
             child2.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
@@ -82,7 +84,7 @@ public class SC_Wall : MonoBehaviour {
 
             child2.transform.GetChild(1).gameObject.SetActive(false);
             changePhase();
-            score += 300;
+            score += 300 * multiplypts;
             child2.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
@@ -91,7 +93,7 @@ public class SC_Wall : MonoBehaviour {
 
             child2.transform.GetChild(2).gameObject.SetActive(false);
             changePhase();
-            score += 300;
+            score += 300 * multiplypts;
             child2.transform.GetChild(2).GetComponent<SC_DestroyMob>().scoredetection = false;
             changePhase();
         }
@@ -101,7 +103,7 @@ public class SC_Wall : MonoBehaviour {
         if (child3.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
-            score += 400;
+            score += 400 * multiplypts;
             child3.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
         }
 
@@ -178,40 +180,29 @@ public class SC_Wall : MonoBehaviour {
             d = 0;
         } else {
 
-            d += 1;
+            d ++;
         }
 
         switch (d) {
 
             case 0:
                 this.transform.position = new Vector3(20, this.transform.position.y, this.transform.position.z);
+                multiplypts = 1;
                 break;
 
             case 1:
                 this.transform.position = new Vector3(this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
-                if (GetComponent<SC_DestroyMob>().scoredetection == true)
-                {
-
-                    score += 100;
-                }
+                multiplypts = 2;
                 break;
 
             case 2:
                 this.transform.position = new Vector3(this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
-                if (GetComponent<SC_DestroyMob>().scoredetection == true)
-                {
-
-                    score += 200;
-                }
+                multiplypts = 3;
                 break;
 
             case 3:
                 this.transform.position = new Vector3(this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
-                if (GetComponent<SC_DestroyMob>().scoredetection == true)
-                {
-
-                    score += 300;
-                }
+                multiplypts = 4;
                 break;
         }
     }

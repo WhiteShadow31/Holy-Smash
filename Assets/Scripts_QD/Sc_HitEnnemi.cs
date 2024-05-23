@@ -45,6 +45,8 @@ public class Sc_HitEnnemi : MonoBehaviour
 
     void Update() {
 
+        //Debug.Log();
+
         _targetDeviceR.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
 
         //var gamepad = Gamepad.current;

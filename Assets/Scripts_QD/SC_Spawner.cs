@@ -25,18 +25,27 @@ public class SC_Spawner : MonoBehaviour {
 
         //if (devices.Count > 0)
         //{
-        //    _targetDeviceL = devices[0];
-        //    GameObject prefab = controllerPrefabs.Find(controller => controller.name == _targetDeviceL.name);
+        //    _targetDeviceL = devices[1];
+        //    //GameObject prefab = controllerPrefabs.Find(controller => controller.name == _targetDeviceL.name);
         //}
     }
     void Update() {
 
         //_targetDeviceL.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
-        //if(triggerValue == 1) {
 
+        //if (triggerValue == 1)
+        //{
+
+        //    spawnMob();
         //    Debug.Log("claquement");
         //    claquementDoigt.Play();
-        //    spawnMob();
+        //}
+
+        //if (mob == null)
+        //{
+
+        //    Instantiate(mob, new Vector3(8.25f, 1f, 0), Quaternion.identity);
+        //    waitCoroutine();
         //}
     }
 
@@ -67,4 +76,12 @@ public class SC_Spawner : MonoBehaviour {
         //Destroy(batte);
         Instantiate(batte, new Vector3(7.5f, 1f, -2.5f), Quaternion.identity);
     }
+
+    //IEnumerator waitCoroutine()
+    //{
+
+    //    //yield on a new YieldInstruction that waits for x seconds.
+    //    yield return new WaitForSeconds(5);
+    //    Destroy(mob);
+    //}
 }

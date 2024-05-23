@@ -36,9 +36,11 @@ public class SC_Mummy : MonoBehaviour {
             rigidbody.isKinematic = false;
         }
     }
-    public void OnCollisionEnter(Collision collider) {
 
-        if (collider.gameObject.tag == "Batte") {
+    public void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Batte")
+        {
 
             EnableRagdoll();
         }

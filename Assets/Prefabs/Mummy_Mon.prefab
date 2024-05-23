@@ -108,7 +108,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100070, guid: 3353e4f866c39d043a315b41717c9bb7,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4574433697732985214}
+      addedObject: {fileID: 3691736791958590243}
     - targetCorrespondingSourceObject: {fileID: 100030, guid: 3353e4f866c39d043a315b41717c9bb7,
         type: 3}
       insertIndex: -1
@@ -765,33 +765,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitByBatte: 0
---- !u!54 &4574433697732985214
-Rigidbody:
+--- !u!136 &3691736791958590243
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908359649572504380}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &908359649572504416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100026, guid: 3353e4f866c39d043a315b41717c9bb7,

@@ -14,7 +14,7 @@ public class SC_Wall : MonoBehaviour {
     public int i;
     public int d;
 
-    public int multiplypts;
+    public int multiplypts = 1;
 
     public TMP_Text scoreText;
     public int score;
@@ -213,6 +213,7 @@ public class SC_Wall : MonoBehaviour {
         d = 0;
         score = 0;
         nbSetActive = 0;
+        multiplypts = 1;
 
         //=====================================================================================//
 

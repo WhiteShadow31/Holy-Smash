@@ -96654,7 +96654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mob: {fileID: 5540240363657938064, guid: 4fd310972b28b8f41ae17018b5fc3a86, type: 3}
   batte: {fileID: 2448211457736536690, guid: d364133a3ff39804285f85070b410dec, type: 3}
-  claquementDoigt: {fileID: 6644439965998568734}
 --- !u!4 &1882660321
 Transform:
   m_ObjectHideFlags: 0
@@ -101472,6 +101471,11 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 2005463541}
+    - target: {fileID: 6943090188941455447, guid: 5991e4ef9ac0f18458fdab458a14ac64,
+        type: 3}
+      propertyPath: multiplypts
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -110536,7 +110540,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mob: {fileID: 5540240363657938064, guid: 4fd310972b28b8f41ae17018b5fc3a86, type: 3}
   batte: {fileID: 2448211457736536690, guid: d364133a3ff39804285f85070b410dec, type: 3}
-  claquementDoigt: {fileID: 6644439965998568734}
 --- !u!82 &6644439965998568734
 AudioSource:
   m_ObjectHideFlags: 0

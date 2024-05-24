@@ -110,15 +110,30 @@ public class SC_Wall : MonoBehaviour {
         //Debug.Log(nbSetActive);
     }
 
+    public void SetObjectState(GameObject obj, bool state) {
+
+        foreach(MeshRenderer renderer in obj.GetComponentsInChildren<MeshRenderer>()) {
+
+            renderer.enabled = state;
+        }
+
+        foreach (CapsuleCollider collider in obj.GetComponentsInChildren<CapsuleCollider>())
+        {
+
+            collider.enabled = state;
+        }
+    }
+
     public void changePhase() {
 
         switch (i) {
 
             case 0:
-                child0.SetActive(true);
-                child1.SetActive(false);
-                child2.SetActive(false);
-                child3.SetActive(false);
+
+                SetObjectState(child0, true);
+                SetObjectState(child1, false);
+                SetObjectState(child2, false);
+                SetObjectState(child3, false);
 
                 nbSetActive++;
 
@@ -131,10 +146,10 @@ public class SC_Wall : MonoBehaviour {
 
             case 1:
 
-                child0.SetActive(false);
-                child1.SetActive(true);
-                child2.SetActive(false);
-                child3.SetActive(false);
+                SetObjectState(child0, false);
+                SetObjectState(child1, true);
+                SetObjectState(child2, false);
+                SetObjectState(child3, false);
 
                 nbSetActive++;
 
@@ -148,10 +163,10 @@ public class SC_Wall : MonoBehaviour {
 
             case 2:
 
-                child0.SetActive(false);
-                child1.SetActive(false);
-                child2.SetActive(true);
-                child3.SetActive(false);
+                SetObjectState(child0, false);
+                SetObjectState(child1, false);
+                SetObjectState(child2, true);
+                SetObjectState(child3, false);
 
                 nbSetActive++;
 
@@ -164,11 +179,12 @@ public class SC_Wall : MonoBehaviour {
                 break;
 
             case 3:
-                child0.SetActive(false);
-                child1.SetActive(false);
-                child2.SetActive(false);
-                child3.SetActive(true);
-                
+
+                SetObjectState(child0, false);
+                SetObjectState(child1, false);
+                SetObjectState(child2, false);
+                SetObjectState(child3, true);
+
                 break;
         }
     }

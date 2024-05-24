@@ -55,6 +55,7 @@ public class Sc_HitEnnemi : MonoBehaviour
 
             impultionForce = 50f;
             StartSlowMotion();
+
             if(mobHit == true)
             {
                 nbHit = 0;

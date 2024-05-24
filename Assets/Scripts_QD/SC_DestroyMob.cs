@@ -7,6 +7,10 @@ public class SC_DestroyMob : MonoBehaviour {
 
     public bool scoredetection = false;
 
+    public GameObject spawnMob;
+
+    private bool isEnterOnce = false;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -20,24 +24,41 @@ public class SC_DestroyMob : MonoBehaviour {
 
     public void OnTriggerEnter(Collider collision) {
 
-        scoredetection = true;
         if(collision.gameObject.tag != "Mob" && collision.gameObject.tag != "Batte") {
 
             collision.transform.position = new Vector3(0, 0, 0);
 
         } else {
 
-            Destroy(collision.gameObject);
-            //StartCoroutine(waitCoroutine(collision));
+            if(collision.gameObject.tag == "Mob" && isEnterOnce == false)
+            {
+                spawnMob.GetComponent<SC_Spawner>().nbMob--;
+                isEnterOnce = true;
+                StartCoroutine(waitCoroutine(collision));
+            }
+
+            if (collision.gameObject.tag == "Batte")
+            {
+                Destroy(collision.gameObject);
+            }
         }
+
+        scoredetection = true;
     }
 
     IEnumerator waitCoroutine(Collider collision) {
         
         //yield on a new YieldInstruction that waits for x seconds.
-        yield return new WaitForSeconds(2);
         if(collision != null ) {
 
+            collision.transform.GetComponent<Rigidbody>().isKinematic = true;
+            collision.gameObject.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+            collision.gameObject.transform.GetChild(1).GetComponent<ParticleSystem>().Play();
+
+
+            yield return new WaitForSeconds(2);
+
+            isEnterOnce = false;
             Destroy(collision.gameObject);
         }
     }

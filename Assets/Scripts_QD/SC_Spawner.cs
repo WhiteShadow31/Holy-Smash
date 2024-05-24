@@ -10,6 +10,8 @@ public class SC_Spawner : MonoBehaviour {
 
     public GameObject mob;
 
+    public int nbMob;
+
     //public GameObject plateform;
     //public float speedPlateform = 0.5f;
 
@@ -17,7 +19,7 @@ public class SC_Spawner : MonoBehaviour {
 
     //public AudioSource claquementDoigt;
 
-    void Start() {
+    void Awake() {
 
         //List<InputDevice> devices = new List<InputDevice>();
         //InputDeviceCharacteristics leftControlCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
@@ -28,6 +30,8 @@ public class SC_Spawner : MonoBehaviour {
         //    _targetDeviceL = devices[1];
         //    //GameObject prefab = controllerPrefabs.Find(controller => controller.name == _targetDeviceL.name);
         //}
+
+        nbMob = 0;
     }
     void Update() {
 
@@ -41,12 +45,12 @@ public class SC_Spawner : MonoBehaviour {
         //    claquementDoigt.Play();
         //}
 
-        //if (mob == null)
-        //{
+        if (nbMob < 1)
+        {
 
-        //    Instantiate(mob, new Vector3(8.25f, 1f, 0), Quaternion.identity);
-        //    waitCoroutine();
-        //}
+            nbMob++;
+            spawnMob();
+        }
     }
 
     public void spawnMob() {
@@ -56,7 +60,8 @@ public class SC_Spawner : MonoBehaviour {
         //Invoke("mouvingPlateform", 1f);
         
         Instantiate(mob, new Vector3(8.25f, 1f, 0), Quaternion.identity);
-        Invoke("CanonMobUp", 1f);
+
+        //Invoke("CanonMobUp", 1f);
 
         //Instantiate(mob, new Vector3(9f, 2f, 0f), Quaternion.identity);
     }
@@ -66,10 +71,10 @@ public class SC_Spawner : MonoBehaviour {
     //    plateform.transform.Translate(new Vector3(8.25f, -0.1f, 0) * speedPlateform * Time.deltaTime);
     //}
 
-    public void CanonMobUp() {
+    //public void CanonMobUp() {
 
-        mob.GetComponent<Rigidbody>().AddForce(Vector3.up * 20f, ForceMode.Impulse);
-    }
+    //    mob.GetComponent<Rigidbody>().AddForce(Vector3.up * 20f, ForceMode.Impulse);
+    //}
 
     public void spawnBatte() {
 

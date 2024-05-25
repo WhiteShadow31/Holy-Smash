@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SC_DestroyMob : MonoBehaviour {
+public class SC_DestroyMob : MonoBehaviour
+{
 
     public bool scoredetection = false;
 
@@ -11,29 +12,42 @@ public class SC_DestroyMob : MonoBehaviour {
 
     private bool isEnterOnce = false;
 
-    // Start is called before the first frame update
-    void Start() {
+    public AudioSource fireSound;
+    public AudioSource screamSound;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+
+        fireSound = GetComponent<AudioSource>();
+        screamSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
         //Debug.Log(scoredetection);
     }
 
-    public void OnTriggerEnter(Collider collision) {
+    public void OnTriggerEnter(Collider collision)
+    {
 
-        if(collision.gameObject.tag != "Mob" && collision.gameObject.tag != "Batte") {
+        if (collision.gameObject.tag != "Mob" && collision.gameObject.tag != "Batte")
+        {
 
             collision.transform.position = new Vector3(0, 0, 0);
 
-        } else {
+        }
+        else
+        {
 
-            if(collision.gameObject.tag == "Mob" && isEnterOnce == false)
+            if (collision.gameObject.tag == "Mob" && isEnterOnce == false)
             {
                 spawnMob.GetComponent<SC_Spawner>().nbMob--;
                 isEnterOnce = true;
+                fireSound.Play();
+                //screamSound.Play();
                 StartCoroutine(waitCoroutine(collision));
             }
 
@@ -46,10 +60,12 @@ public class SC_DestroyMob : MonoBehaviour {
         scoredetection = true;
     }
 
-    IEnumerator waitCoroutine(Collider collision) {
-        
+    IEnumerator waitCoroutine(Collider collision)
+    {
+
         //yield on a new YieldInstruction that waits for x seconds.
-        if(collision != null ) {
+        if (collision != null)
+        {
 
             collision.transform.GetComponent<Rigidbody>().isKinematic = true;
             collision.gameObject.transform.GetChild(0).GetComponent<ParticleSystem>().Play();

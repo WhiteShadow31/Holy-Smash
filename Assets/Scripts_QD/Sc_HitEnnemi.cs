@@ -23,18 +23,22 @@ public class Sc_HitEnnemi : MonoBehaviour
 
     public bool mobHit = false;
 
+    public AudioSource hitSound;
+
     void Start() {
 
         List<InputDevice> devices = new List<InputDevice>();
         InputDeviceCharacteristics rightControlCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
         InputDevices.GetDevicesWithCharacteristics(rightControlCharacteristics, devices);
 
+        hitSound = GetComponent<AudioSource>();
+
         //foreach (var item in devices) {
 
         //    Debug.Log(item.name + item.characteristics);
         //}
 
-        if(devices.Count > 0)
+        if (devices.Count > 0)
         {
             _targetDeviceR = devices[0];
         }
@@ -64,6 +68,7 @@ public class Sc_HitEnnemi : MonoBehaviour
         } else {
 
             StopSlowMotion();
+            impultionForce = 30f;
             mobHit = false;
         }
         //Debug.Log(mob.mobDir.y);
@@ -74,6 +79,7 @@ public class Sc_HitEnnemi : MonoBehaviour
 
         if (collider.gameObject.tag == "Mob")
         {
+            hitSound.Play();
             mobHit = true;
             //collider.rigidbody.AddForce(Vector3.forward * impultionForce, ForceMode.Impulse);
             collider.rigidbody.AddForce(Vector3.up * impultionForce, ForceMode.Impulse);

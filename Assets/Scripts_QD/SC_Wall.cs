@@ -52,7 +52,9 @@ public class SC_Wall : MonoBehaviour {
         if (child1.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
-            child1.transform.GetChild(0).gameObject.SetActive(false);
+            child1.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+            child1.transform.GetChild(0).GetComponent<CapsuleCollider>().enabled = false;
+
             changePhase();
             score += 200 * multiplypts;
             child1.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
@@ -61,7 +63,9 @@ public class SC_Wall : MonoBehaviour {
         if (child1.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
-            child1.transform.GetChild(1).gameObject.SetActive(false);
+            child1.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+            child1.transform.GetChild(1).GetComponent<CapsuleCollider>().enabled = false;
+
             changePhase();
             score += 200 * multiplypts;
             child1.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
@@ -73,7 +77,9 @@ public class SC_Wall : MonoBehaviour {
         if (child2.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
-            child2.transform.GetChild(0).gameObject.SetActive(false);
+            child2.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+            child2.transform.GetChild(0).GetComponent<CapsuleCollider>().enabled = false;
+
             changePhase();
             score += 300 * multiplypts;
             child2.transform.GetChild(0).GetComponent<SC_DestroyMob>().scoredetection = false;
@@ -82,7 +88,9 @@ public class SC_Wall : MonoBehaviour {
         if (child2.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
-            child2.transform.GetChild(1).gameObject.SetActive(false);
+            child2.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+            child2.transform.GetChild(1).GetComponent<CapsuleCollider>().enabled = false;
+
             changePhase();
             score += 300 * multiplypts;
             child2.transform.GetChild(1).GetComponent<SC_DestroyMob>().scoredetection = false;
@@ -91,7 +99,9 @@ public class SC_Wall : MonoBehaviour {
         if (child2.transform.GetChild(2).GetComponent<SC_DestroyMob>().scoredetection == true)
         {
 
-            child2.transform.GetChild(2).gameObject.SetActive(false);
+            child2.transform.GetChild(2).GetComponent<MeshRenderer>().enabled = false;
+            child2.transform.GetChild(2).GetComponent<CapsuleCollider>().enabled = false;
+
             changePhase();
             score += 300 * multiplypts;
             child2.transform.GetChild(2).GetComponent<SC_DestroyMob>().scoredetection = false;
@@ -146,10 +156,14 @@ public class SC_Wall : MonoBehaviour {
 
             case 1:
 
-                SetObjectState(child0, false);
-                SetObjectState(child1, true);
-                SetObjectState(child2, false);
-                SetObjectState(child3, false);
+                if (nbSetActive <= 0)
+                {
+
+                    SetObjectState(child0, false);
+                    SetObjectState(child1, true);
+                    SetObjectState(child2, false);
+                    SetObjectState(child3, false);
+                }
 
                 nbSetActive++;
 
@@ -163,16 +177,21 @@ public class SC_Wall : MonoBehaviour {
 
             case 2:
 
-                SetObjectState(child0, false);
-                SetObjectState(child1, false);
-                SetObjectState(child2, true);
-                SetObjectState(child3, false);
+                if (nbSetActive <= 0)
+                {
+
+                    SetObjectState(child0, false);
+                    SetObjectState(child1, false);
+                    SetObjectState(child2, true);
+                    SetObjectState(child3, false);
+                }
 
                 nbSetActive++;
 
                 if (nbSetActive >= 6)
                 {
 
+                    //Invoke("iIncrementation", 2.5f);
                     i++;
                     nbSetActive = 0;
                 }
@@ -223,6 +242,11 @@ public class SC_Wall : MonoBehaviour {
         }
     }
 
+    //public void Incrementationi() {
+
+    //    i++;
+    //}
+
     public void ResetAll() {
 
         i = 0;
@@ -233,14 +257,14 @@ public class SC_Wall : MonoBehaviour {
 
         //=====================================================================================//
 
-        child1.transform.GetChild(0).gameObject.SetActive(true);
-        child1.transform.GetChild(1).gameObject.SetActive(true);
+        //child1.transform.GetChild(0).gameObject.SetActive(true);
+        //child1.transform.GetChild(1).gameObject.SetActive(true);
 
         //=====================================================================================//
 
-        child2.transform.GetChild(0).gameObject.SetActive(true);
-        child2.transform.GetChild(1).gameObject.SetActive(true);
-        child2.transform.GetChild(2).gameObject.SetActive(true);
+        //child2.transform.GetChild(0).gameObject.SetActive(true);
+        //child2.transform.GetChild(1).gameObject.SetActive(true);
+        //child2.transform.GetChild(2).gameObject.SetActive(true);
 
         //=====================================================================================//
 

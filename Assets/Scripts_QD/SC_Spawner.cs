@@ -10,6 +10,11 @@ public class SC_Spawner : MonoBehaviour {
 
     public GameObject mob;
 
+    public GameObject light1;
+    public GameObject light2;
+
+    public AudioSource godSound;
+
     public int nbMob;
 
     //public GameObject plateform;
@@ -31,6 +36,8 @@ public class SC_Spawner : MonoBehaviour {
         //    //GameObject prefab = controllerPrefabs.Find(controller => controller.name == _targetDeviceL.name);
         //}
 
+        godSound = GetComponent<AudioSource>();
+
         nbMob = 0;
     }
     void Update() {
@@ -49,7 +56,7 @@ public class SC_Spawner : MonoBehaviour {
         {
 
             nbMob++;
-            spawnMob();
+            Invoke("spawnMob", 2f);
         }
     }
 
@@ -80,6 +87,16 @@ public class SC_Spawner : MonoBehaviour {
 
         //Destroy(batte);
         Instantiate(batte, new Vector3(7.5f, 1f, -2.5f), Quaternion.identity);
+        light1.gameObject.SetActive(true);
+        light2.gameObject.SetActive(true);
+        godSound.Play();
+        Invoke("StopSpawnBatteEffects", 9f);
+    }
+
+    public void StopSpawnBatteEffects() {
+
+        light1.gameObject.SetActive(false);
+        light2.gameObject.SetActive(false);
     }
 
     //IEnumerator waitCoroutine()
